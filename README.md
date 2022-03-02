@@ -8,7 +8,7 @@ The changes are in `main.cpp` to make it work with recent version of boost.
 
 A make file is added to make it easy to compile on Linux. 
 
-It has been tested on Ubuntu 20.04.
+It has been tested on Ubuntu 20.04. `boost` version is 1.71.0.0ubuntu2.
 
 To compile, we need C++ compiler and boost. 
 
