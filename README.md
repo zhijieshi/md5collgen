@@ -26,3 +26,8 @@ Then in the project directory, run `make`.
 
     # if you get error, try to install boost libs used in the project only
     sudo apt install libboost-filesystem-dev libboost-timer-dev libboost-program-options-dev
+
+## Link
+
+Marc Stevens also maintains a project that generates SHA-1 collisions. 
+[link](https://github.com/cr-marcstevens/hashclash).
