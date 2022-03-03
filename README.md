@@ -23,3 +23,6 @@ Then in the project directory, run `make`.
 
     cd md5collgen 
     make
+
+    # if you get error, try to install boost libs used in the project only
+    sudo apt install libboost-filesystem-dev libboost-timer-dev libboost-program-options-dev
