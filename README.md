@@ -15,6 +15,9 @@ To compile, we need C++ compiler and boost.
     sudo apt install build-essential
     sudo apt install libboost-all-dev
 
+    # only install boost libs that are needed
+    sudo apt install libboost-filesystem-dev libboost-timer-dev libboost-program-options-dev
+
 Clone this repo.
 
     git clone https://github.com/zhijieshi/md5collgen.git
@@ -23,9 +26,6 @@ Then in the project directory, run `make`.
 
     cd md5collgen 
     make
-
-    # if you get error, try to install boost libs used in the project only
-    sudo apt install libboost-filesystem-dev libboost-timer-dev libboost-program-options-dev
 
 ## Link
 
