@@ -10,13 +10,10 @@ A make file is added to make it easy to compile on Linux.
 
 It has been tested on Ubuntu 20.04. `boost` version is 1.71.0.0ubuntu2.
 
-To compile, we need C++ compiler and boost. 
+To compile, we need C++ compiler. We do not need boost library any more (Jan
+2024).
 
     sudo apt install build-essential
-    sudo apt install libboost-all-dev
-
-    # only install boost libs that are needed
-    sudo apt install libboost-filesystem-dev libboost-timer-dev libboost-program-options-dev
 
 Clone this repo.
 
