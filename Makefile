@@ -4,7 +4,7 @@ OBJS=$(SRCS:.cpp=.o)
 CC=g++
 CFLAGS += -Wall 
 CPPFLAGS += -Wall -O
-LIBS = -lboost_program_options -lboost_filesystem -lboost_timer
+LIBS=
 
 all : $(TARGET)
 
