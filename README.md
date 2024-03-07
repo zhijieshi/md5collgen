@@ -8,11 +8,11 @@ The changes are in `main.cpp` to make it work with recent version of boost.
 
 A make file is added to make it easy to compile on Linux. 
 
-It has been tested on Ubuntu 20.04. `boost` version is 1.71.0.0ubuntu2.
+As of Jan 2024, the project can be compiled with gcc (which supports C++) on Ubuntu 22.04. `boost` is no longer needed.
 
-To compile, we need C++ compiler. We do not need boost library any more (Jan
-2024).
+To install gcc, run the following commands.
 
+    sudo apt update
     sudo apt install build-essential
 
 Clone this repo.
