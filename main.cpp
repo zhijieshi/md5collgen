@@ -152,8 +152,8 @@ int main(int argc, char** argv)
 
     uint32 IV[4] = { MD5IV[0], MD5IV[1], MD5IV[2], MD5IV[3] };
 
-    string outfn1 = "msg1.bin";
-    string outfn2 = "msg2.bin";
+    string outfn1 = "";
+    string outfn2 = "";
     string ihv {""};
     string prefixfn;
     bool prefixfile = false;
@@ -173,6 +173,11 @@ int main(int argc, char** argv)
         Timer runtime;
 
         int pos{1};
+
+        if (argc == 1) {
+            print_help();
+            return 1;
+        }
 
         for (auto i = 1; i < argc; i ++) {
             std::string_view arg{argv[i]};
@@ -239,7 +244,7 @@ int main(int argc, char** argv)
         if (testall)
             test_all();
 
-        if (prefixfile)
+        if (prefixfile && !outfn1.size())
         {
             unsigned l = prefixfn.size();
             if (l >= 4 && prefixfn[l-4]=='.' && prefixfn[l-3]!='.' && prefixfn[l-2]!='.' && prefixfn[l-1]!='.')
